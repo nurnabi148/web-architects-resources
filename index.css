@@ -6,3 +6,46 @@
   font-weight:400;
   font-style: normal;
 }
+.display-flex 
+{
+    display: flex;
+}
+
+.navber 
+{
+    justify-content: space-between;
+   
+}
+
+.nav-item 
+{
+    list-style: none;
+    margin-right: 30px;
+   
+}
+.bg-light 
+{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+}
+/* Dark 2 */
+.text-gray 
+{
+    color: #424242;
+}
+/* Dark 3 */
+.light-gray 
+{
+    color: #727272;
+}
+.nav-link 
+{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navber,.banner 
+{
+    max-width: 1440px;
+    margin: 0px auto;
+}
