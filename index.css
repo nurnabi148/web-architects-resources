@@ -10,10 +10,15 @@
 {
     display: flex;
 }
-
-.navber 
+.brand 
+{
+    font-weight: 700;
+    font-size: 3rem ;
+}
+.navbar 
 {
     justify-content: space-between;
+    align-items: center;
    
 }
 
@@ -44,8 +49,42 @@
     font-weight: 500;
 }
 
-.navber,.banner 
+.navbar , .banner 
 {
     max-width: 1440px;
+    margin: 0 auto;
+    /* height: 700px; */
+}
+.banner-content 
+{
+    text-align: center;
+    max-width: 862px;
     margin: 0px auto;
+    margin-bottom: 33px;
+}
+.banner-title 
+{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.btn-primary 
+{
+    background-color: #FF900E;
+    color: white;
+    font: size 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+.banner-image 
+{
+    width: 100%;
+}
+@media screen and (max-width: 576ppx) {
+    .navbar ,.nav-link 
+    {
+        flex-direction: column;
+    }
+    
 }
