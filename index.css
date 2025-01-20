@@ -9,6 +9,7 @@
 .display-flex 
 {
     display: flex;
+    /* flex-direction: column; */
 }
 .brand 
 {
@@ -58,14 +59,14 @@
 .banner-content 
 {
     text-align: center;
-    max-width: 862px;
+    max-width: 850px;
     margin: 0px auto;
     margin-bottom: 33px;
 }
 .banner-title 
 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .btn-primary 
 {
@@ -81,10 +82,107 @@
 {
     width: 100%;
 }
-@media screen and (max-width: 576ppx) {
-    .navbar ,.nav-link 
+main 
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* main section start  */
+main > section {
+    margin-top: 130px;
+}
+.teams 
+{
+    align-items: center;
+}
+#Quick-list 
+{
+    
+    font-weight: 500;
+}
+.section-title
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.team-img-contain 
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-feature 
+{
+    margin-left: 73px;
+}
+.text-primary 
+{
+    color: #FF900E;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar ,
+    .nav-links ,
+    .teams
     {
         flex-direction: column;
     }
+    .team-img-contain 
+    {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .our-feature 
+    {
+        margin-left: 20px;
+    }
     
 }
+@media screen and (min-width: 576px) and (max-width:992px){
+    .teams 
+    {
+        flex-direction: column;
+    }
+    .our-feature  
+   
+    {
+        margin-left: 50px auto;
+    }
+    
+}
+/* card item  */
+.section-description 
+{
+    max-width: 540px;
+}
+.fact-card 
+{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card-container 
+{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.card-number 
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+ .face-name
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+    
+   
+ }
+
