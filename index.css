@@ -185,4 +185,35 @@ main > section {
     
    
  }
+ .sponsar-company 
+ {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-bottom: 140px;
+}
+.sponsar-company img
+{
+    filter: grayscale(100%);
+}
+ .sponsar-info 
+ {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    max-width: 540;
+    margin: 50px auto;
+
+ }
+ .sponsar-title 
+ {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #131313;
+ }
+ .last-description 
+ {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 540;
+ }
 
